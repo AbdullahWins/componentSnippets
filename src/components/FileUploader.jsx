@@ -86,7 +86,7 @@ const FileUploader = () => {
       formData.append("data", JSON.stringify(data));
 
       const response = await fetch(
-        `${import.meta.env.VITE_API_BASE_URL}/banners/edit/${id}`,
+        `${import.meta.env.VITE_API_BASE_URL}/ringtones/edit/${id}`,
         {
           method: "PATCH",
           body: formData,
@@ -109,7 +109,7 @@ const FileUploader = () => {
       <div>
         <button
           onClick={() => {
-            updateRingtoneById("647ec0da264d1f982e7fe91e");
+            updateRingtoneById("6475ce4a7b1ba9a928077c23");
           }}
         >
           update
