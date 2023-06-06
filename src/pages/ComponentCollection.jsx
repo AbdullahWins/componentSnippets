@@ -2,6 +2,7 @@ import AnchorTagMaintainer from "../components/AnchorTagMaintainer";
 import AsyncButton from "../components/AsyncButton";
 import DatePickerComponent from "../components/DatePickerComponent";
 import FileUploader from "../components/FileUploader";
+import ReplicateAI from "../components/ReplicateAI";
 import TextDivider from "../components/TextDivider";
 
 const ComponentCollection = () => {
@@ -12,6 +13,7 @@ const ComponentCollection = () => {
       <AsyncButton></AsyncButton>
       <TextDivider></TextDivider>
       <AnchorTagMaintainer></AnchorTagMaintainer>
+      <ReplicateAI></ReplicateAI>
     </div>
   );
 };
