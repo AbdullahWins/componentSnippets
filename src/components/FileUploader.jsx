@@ -78,9 +78,43 @@ const FileUploader = () => {
     }
   };
 
+  // Function to update a ringtone by ID
+  const updateRingtoneById = async (id) => {
+    try {
+      const formData = new FormData();
+      formData.append("file", file);
+      formData.append("data", JSON.stringify(data));
+
+      const response = await fetch(
+        `${import.meta.env.VITE_API_BASE_URL}/ringtones/edit/${id}`,
+        {
+          method: "PATCH",
+          body: formData,
+        }
+      );
+
+      const result = await response.json();
+      console.log(result);
+
+      // Handle success response here
+    } catch (error) {
+      console.error(error);
+      // Handle error here
+    }
+  };
+
   return (
     <div className="flex flex-col gap-6 border-2 border-blue-400 rounded-md p-6">
       <h1 className="text-3xl font-bold underline">A File uploader form</h1>
+      <div>
+        <button
+          onClick={() => {
+            updateRingtoneById("6475ce4a7b1ba9a928077c23");
+          }}
+        >
+          update
+        </button>
+      </div>
       <div>
         <label htmlFor="file2">File:</label>
         <input type="file" id="file2" onChange={handleFileChange} />
