@@ -2,7 +2,7 @@ import { useState } from "react";
 
 const ReplicateAI = () => {
   const [image, setImage] = useState("");
-  const [prompt, setPrompt] = useState();
+  const [prompt, setPrompt] = useState("");
 
   const handleChange = (event) => {
     event.preventDefault();
@@ -14,7 +14,10 @@ const ReplicateAI = () => {
   const handleClick = async () => {
     const response = await fetch(`${import.meta.env.VITE_API_BASE_URL}/rep`, {
       method: "POST",
-      prompt,
+      headers: {
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify({ prompt }),
     });
     const result = await response.json();
     console.log(result);
