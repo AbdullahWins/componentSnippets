@@ -27,6 +27,12 @@ const normFile = (e) => {
 
 const MultiPurposeForm = () => {
   const [componentDisabled, setComponentDisabled] = useState(true);
+  const [form] = Form.useForm();
+
+  const handleChange = () => {
+    console.log(form);
+  };
+
   return (
     <div className="flex flex-col gap-6 border-2 border-blue-400 rounded-md p-6 w-full">
       <Checkbox
@@ -36,6 +42,8 @@ const MultiPurposeForm = () => {
         Form disabled
       </Checkbox>
       <Form
+        form={form}
+        onValuesChange={handleChange}
         labelCol={{
           span: 4,
         }}
