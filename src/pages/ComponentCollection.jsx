@@ -1,4 +1,4 @@
-import AnchorTagMaintainer from "../components/AnchorTagMaintainer";
+// import AnchorTagMaintainer from "../components/AnchorTagMaintainer";
 import AsyncButton from "../components/AsyncButton";
 import DatePickerComponent from "../components/DatePickerComponent";
 import FileUploader from "../components/FileUploader";
@@ -12,7 +12,7 @@ const ComponentCollection = () => {
       <DatePickerComponent></DatePickerComponent>
       <AsyncButton></AsyncButton>
       <TextDivider></TextDivider>
-      <AnchorTagMaintainer></AnchorTagMaintainer>
+      {/* <AnchorTagMaintainer></AnchorTagMaintainer> */}
       <ReplicateAI></ReplicateAI>
     </div>
   );

@@ -29,8 +29,8 @@ const ReplicateAI = () => {
   };
 
   return (
-    <div>
-      <input type="text" onChange={handleChange} />
+    <div className="flex flex-col gap-6 border-2 border-blue-400 rounded-md p-6">
+      <input className="bg-gray-200" type="text" onChange={handleChange} />
       <img src={image} alt="" />
       <button onClick={handleClick}>Click</button>
     </div>
