@@ -1,5 +1,8 @@
 // import AnchorTagMaintainer from "../components/AnchorTagMaintainer";
 import AsyncButton from "../components/AsyncButton";
+import BackgroundWithPicker from "../components/BackgroundWithPicker";
+import ColorChanger from "../components/ColorChanger";
+import ColorPickerReact from "../components/ColorPickerReact";
 import DatePickerComponent from "../components/DatePickerComponent";
 import FileUploader from "../components/FileUploader";
 import ReplicateAI from "../components/ReplicateAI";
@@ -14,6 +17,9 @@ const ComponentCollection = () => {
       <TextDivider></TextDivider>
       {/* <AnchorTagMaintainer></AnchorTagMaintainer> */}
       <ReplicateAI></ReplicateAI>
+      <ColorPickerReact></ColorPickerReact>
+      <ColorChanger></ColorChanger>
+      <BackgroundWithPicker></BackgroundWithPicker>
     </div>
   );
 };
