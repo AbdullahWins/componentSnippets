@@ -1,9 +1,16 @@
-import AnchorTagMaintainer from "../components/AnchorTagMaintainer";
-import AsyncButton from "../components/AsyncButton";
 import DatePickerComponent from "../components/DatePickerComponent";
 import FileUploader from "../components/FileUploader";
-import ReplicateAI from "../components/ReplicateAI";
+import AsyncButton from "../components/AsyncButton";
 import TextDivider from "../components/TextDivider";
+import Checkboxes from "../components/Checkboxes";
+import MoneyInput from "../components/MoneyInput";
+// import AnchorTagMaintainer from "../components/AnchorTagMaintainer";
+// import BackgroundWithPicker from "../components/BackgroundWithPicker";
+// import ColorChanger from "../components/ColorChanger";
+// import ColorPickerReact from "../components/ColorPickerReact";
+// import MultiPurposeForm from "../components/MultiPurposeForm";
+// import MultiSelector from "../components/MultiSelector";
+// import ReplicateAI from "../components/ReplicateAI";
 
 const ComponentCollection = () => {
   return (
@@ -12,8 +19,15 @@ const ComponentCollection = () => {
       <DatePickerComponent></DatePickerComponent>
       <AsyncButton></AsyncButton>
       <TextDivider></TextDivider>
-      <AnchorTagMaintainer></AnchorTagMaintainer>
-      <ReplicateAI></ReplicateAI>
+      {/* <AnchorTagMaintainer></AnchorTagMaintainer> */}
+      {/* <ReplicateAI></ReplicateAI>
+      <ColorPickerReact></ColorPickerReact>
+      <ColorChanger></ColorChanger>
+      <BackgroundWithPicker></BackgroundWithPicker>
+      <MultiPurposeForm></MultiPurposeForm>
+      <MultiSelector></MultiSelector> */}
+      <Checkboxes></Checkboxes>
+      <MoneyInput></MoneyInput>
     </div>
   );
 };
