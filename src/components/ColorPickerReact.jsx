@@ -1,9 +1,20 @@
-import { ColorPicker } from "antd";
+import { ColorPicker, theme } from "antd";
+import { useMemo, useState } from "react";
 
 const ColorPickerReact = () => {
+  const { token } = theme.useToken();
+  const [color, setColor] = useState(token.colorPrimary);
+
+  const colorStyle = useMemo(
+    () => (typeof color === "string" ? color : color.toHexString()),
+    [color]
+  );
+
   return (
     <div className="flex flex-col gap-6 border-2 border-blue-400 rounded-md p-6">
+      <label htmlFor="text-color-picker">Text Color:</label>
       <ColorPicker
+        id="text-color-picker"
         presets={[
           {
             label: "Recommended",
@@ -45,7 +56,10 @@ const ColorPickerReact = () => {
             colors: [],
           },
         ]}
+        value={color}
+        onChange={setColor}
       />
+      <p>you have selected {colorStyle}</p>
     </div>
   );
 };

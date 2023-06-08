@@ -6,6 +6,7 @@ import ColorPickerReact from "../components/ColorPickerReact";
 import DatePickerComponent from "../components/DatePickerComponent";
 import FileUploader from "../components/FileUploader";
 import MultiPurposeForm from "../components/MultiPurposeForm";
+import MultiSelector from "../components/MultiSelector";
 import ReplicateAI from "../components/ReplicateAI";
 import TextDivider from "../components/TextDivider";
 
@@ -22,6 +23,7 @@ const ComponentCollection = () => {
       <ColorChanger></ColorChanger>
       <BackgroundWithPicker></BackgroundWithPicker>
       <MultiPurposeForm></MultiPurposeForm>
+      <MultiSelector></MultiSelector>
     </div>
   );
 };
