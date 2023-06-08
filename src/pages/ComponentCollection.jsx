@@ -3,6 +3,7 @@ import FileUploader from "../components/FileUploader";
 import AsyncButton from "../components/AsyncButton";
 import TextDivider from "../components/TextDivider";
 import Checkboxes from "../components/Checkboxes";
+import MoneyInput from "../components/MoneyInput";
 // import AnchorTagMaintainer from "../components/AnchorTagMaintainer";
 // import BackgroundWithPicker from "../components/BackgroundWithPicker";
 // import ColorChanger from "../components/ColorChanger";
@@ -26,6 +27,7 @@ const ComponentCollection = () => {
       <MultiPurposeForm></MultiPurposeForm>
       <MultiSelector></MultiSelector> */}
       <Checkboxes></Checkboxes>
+      <MoneyInput></MoneyInput>
     </div>
   );
 };
