@@ -26,7 +26,7 @@ const UploadImage = () => {
   };
 
   const addOrderToDB = (formData) => {
-    const url = `${import.meta.env.VITE_API_BASE_URL}/images`;
+    const url = `${import.meta.env.VITE_API_BASE_URL}/generate`;
 
     const options = {
       method: "POST",
@@ -35,11 +35,7 @@ const UploadImage = () => {
     };
     fetch(url, options)
       .then((res) => {
-        if (!res.ok) {
-          throw new Error("Network response was not OK");
-        }
         console.log(res);
-        return res.json();
       })
       .catch((error) => {
         console.error("Error:", error);
