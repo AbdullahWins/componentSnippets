@@ -11,7 +11,9 @@
 // import MultiPurposeForm from "../components/MultiPurposeForm";
 // import MultiSelector from "../components/MultiSelector";
 // import ReplicateAI from "../components/ReplicateAI";
-import UploadImage from "../components/UploadImage";
+// import UploadImage from "../components/UploadImage";
+
+import FetchAndPost from "../components/FetchAndPost";
 
 const ComponentCollection = () => {
   return (
@@ -29,7 +31,8 @@ const ComponentCollection = () => {
       <MultiSelector></MultiSelector>
       <Checkboxes></Checkboxes>
       <MoneyInput></MoneyInput> */}
-      <UploadImage></UploadImage>
+      {/* <UploadImage></UploadImage> */}
+      <FetchAndPost></FetchAndPost>
     </div>
   );
 };
