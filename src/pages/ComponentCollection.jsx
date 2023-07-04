@@ -12,8 +12,9 @@
 // import MultiSelector from "../components/MultiSelector";
 // import ReplicateAI from "../components/ReplicateAI";
 // import UploadImage from "../components/UploadImage";
+// import FetchAndPost from "../components/FetchAndPost";
 
-import FetchAndPost from "../components/FetchAndPost";
+import BookifyIFrame from "../components/BookifyIFrame";
 
 const ComponentCollection = () => {
   return (
@@ -30,9 +31,10 @@ const ComponentCollection = () => {
       <MultiPurposeForm></MultiPurposeForm>
       <MultiSelector></MultiSelector>
       <Checkboxes></Checkboxes>
-      <MoneyInput></MoneyInput> */}
-      {/* <UploadImage></UploadImage> */}
-      <FetchAndPost></FetchAndPost>
+      <MoneyInput></MoneyInput>
+      <UploadImage></UploadImage>
+      <FetchAndPost></FetchAndPost> */}
+      <BookifyIFrame></BookifyIFrame>
     </div>
   );
 };
