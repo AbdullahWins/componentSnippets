@@ -13,12 +13,21 @@
 // import ReplicateAI from "../components/ReplicateAI";
 // import UploadImage from "../components/UploadImage";
 // import FetchAndPost from "../components/FetchAndPost";
+// import LoginWithTwitter from "../components/LoginWithTwitter";
+// import TermlyEmbed from "../components/TermlyEmbed";
+import TextOnMedia from "../components/canvas/TextOnMedia";
 
-import BookifyIFrame from "../components/BookifyIFrame";
+import russian from "../assets/russian.jpg";
+import halo from "../assets/halo.png";
+import video from "../assets/video.mp4";
+
+// import LoginWithFacebook from "../components/LoginWithFacebook";
+
+// import BookifyIFrame from "../components/BookifyIFrame";
 
 const ComponentCollection = () => {
   return (
-    <div className="flex flex-col items-center justify-center gap-6 p-12">
+    <div className="flex flex-col items-center justify-center gap-6 p-12 w-full">
       {/* <FileUploader></FileUploader>
       <DatePickerComponent></DatePickerComponent>
       <AsyncButton></AsyncButton>
@@ -34,7 +43,25 @@ const ComponentCollection = () => {
       <MoneyInput></MoneyInput>
       <UploadImage></UploadImage>
       <FetchAndPost></FetchAndPost> */}
-      <BookifyIFrame></BookifyIFrame>
+      {/* <BookifyIFrame></BookifyIFrame> */}
+      {/* <LoginWithFacebook></LoginWithFacebook> */}
+      {/* <LoginWithTwitter></LoginWithTwitter>
+      <TermlyEmbed></TermlyEmbed> */}
+      <div>
+        <TextOnMedia
+          imageUrl={russian}
+          text="Hello, World!"
+          width={600}
+          height={600}
+        />
+        {/* OR */}
+        {/* <TextOnMedia
+          videoUrl={video}
+          text="Hello, World!"
+          width={600}
+          height={600}
+        /> */}
+      </div>
     </div>
   );
 };
