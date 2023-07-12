@@ -17,15 +17,21 @@
 // import TermlyEmbed from "../components/TermlyEmbed";
 import TextOnMedia from "../components/canvas/TextOnMedia";
 
-import russian from "../assets/russian.jpg";
+// import russian from "../assets/russian.jpg";
 import halo from "../assets/halo.png";
-import video from "../assets/video.mp4";
+import { useState } from "react";
+// import video from "../assets/video.mp4";
 
 // import LoginWithFacebook from "../components/LoginWithFacebook";
 
 // import BookifyIFrame from "../components/BookifyIFrame";
 
 const ComponentCollection = () => {
+  const [text, setText] = useState("enter text");
+
+  const handleTextChange = (event) => {
+    setText(event.target.value);
+  };
   return (
     <div className="flex flex-col items-center justify-center gap-6 p-12 w-full">
       {/* <FileUploader></FileUploader>
@@ -48,11 +54,13 @@ const ComponentCollection = () => {
       {/* <LoginWithTwitter></LoginWithTwitter>
       <TermlyEmbed></TermlyEmbed> */}
       <div>
-        <TextOnMedia
-          imageUrl={russian}
-          text="Hello, World!"
-          width={600}
-          height={600}
+        <TextOnMedia imageUrl={halo} text={text} width={600} height={600} />
+        <input
+          className="p-2"
+          type="text"
+          value={text}
+          onChange={handleTextChange}
+          placeholder="Enter text"
         />
         {/* OR */}
         {/* <TextOnMedia
